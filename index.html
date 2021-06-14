@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="html five assignment">
+    <meta name="keywords" content="assignment, HTML, Git">
+    <title>HTML PRACTICAL TEST</title>
+</head>
+<body style="padding-left: 30px;padding-right: 30px;">
+    <h1>Welcome to git course</h1>
+    <h2>Introduction</h2>
+    <div>
+     Git is a powerful software for tracking changes in any set of files,
+     usually used for coordinating work among programmers collaboratively developing dource code dureing software development.
+    </div>
+    <p><b>Git is powerful in the following different ways:</b></p>
+    <ol type="1">
+        <li>Git is the most commonly used version control system</li>
+        <li>Git tracks the changes you make to files, so you have a record of what has been done, and you can revert to specific versions should you ever need to</li>
+        <li>Git also makes collaboration easier, allowing changes by multiple people to all be merged into one source.</li>
+    </ol>
+    <hr>
+    <table width="100%">
+        <tr>
+            <td width="60%"><video src="./video/VID-20210507-WA0001.mp4" width="100%" height="400" controls></video></td>
+            <td><img src="./img/img4.png" alt="html 5 image" width="100%" height="400"></td>
+        </tr>
+    </table>
+    <h2>BASIC COMMANDS IN GIT</h2>
+    <table cellspacing="0" border="1">
+        <tr>
+            <th>Command name</th>
+            <th>Description</th>
+            <th>Usage</th>
+        </tr>
+        <tr>
+            <td>git init</td>
+            <td>This command turns a directory into an empty Git repository. This is the first step in creating a repository.</td>
+            <td>$ git init</td>
+        </tr>
+        <tr>
+            <td>git add</td>
+            <td>Adds files in the to the staging area for Git. Before a file is available to commit to a repository, the file needs to be added to the Git index (staging area). There are a few different ways to use git add, by adding entire directories, specific files, or all unstaged files.</td>
+            <td>$ git add <file or directory name></td>
+        </tr>
+        <tr>
+            <td>commit</td>
+            <td colspan="2">
+                Record the changes made to the files to a local repository. For easy reference, each commit has a unique ID.
+                It’s best practice to include a message with each commit explaining the changes made in a commit. Adding a commit message helps to find a particular change or understanding the changes.
+                <br>
+                <b>Usage</b>
+                <br>
+                    $ git commit -m "Commit message in quotes"
+                </td>
+        </tr>
+        <tr>
+            <td>git status</td>
+            <td>
+                This command returns the current state of the repository.
+
+git status will return the current working branch. If a file is in the staging area, but not committed, it shows with git status. Or, if there are no changes it’ll return nothing to commit, working directory clean.
+            </td>
+            <td>
+                $ git status
+            </td>
+        </tr>
+        <tr>
+            <td>git config</td>
+            <td>
+                With Git, there are many configurations and settings possible. git config is how to assign these settings. Two important settings are user user.name and user.email. These values set what email address and name commits will be from on a local computer. With git config, a --global flag is used to write the settings to all repositories on a computer. Without a --global flag settings will only apply to the current repository that you are currently in.
+            </td>
+            <td>
+                $ git config <setting> <command>
+            </td>
+        </tr>
+        <tr>
+            <td>git branch</td>
+            <td>To determine what branch the local repository is on, add a new branch, or delete a branch.</td>
+            <td>$ git branch <branch_name></td>
+        </tr>
+        <tr>
+            <td>git check out</td>
+            <td>To start working in a different branch, use git checkout to switch branches.</td>
+            <td>
+                $ git checkout <branch_name>
+            </td>
+        </tr>
+        <tr>
+            <td>git merge</td>
+            <td>
+                Integrate branches together. git merge combines the changes from one branch to another branch. For example, merge the changes made in a staging branch into the stable branch.
+            </td>
+            <td>
+                $ git merge <branch_name><br>
+            </td>
+        </tr>
+    </table>
+    <h2>HTML 5 Images</h2>
+    <table width="100%" cellspacing="5">
+        <tr>
+            <td><img src="./img/img1.png" alt="html 5 image" width="100%" height="250"></td>
+            <td><img src="./img/img2.jpg" alt="html 5 image" width="100%" height="250"></td>
+            <td><img src="./img/img3.png" alt="html 5 image" width="100%" height="250"></td>
+        </tr>
+    </table>
+    <h1 align="center">Contact us</h1>
+    <form>
+        <table align="center">
+            <tr>
+                <td>Your name *</td>
+                <td>&nbsp;</td>
+                <td><input type="text" name="names" id="names" width="100%" placeholder="Eneter your names"></td>
+            </tr>
+            <tr>
+                <td>Your Email *</td>
+                <td>&nbsp;</td>
+                <td><input type="email" name="email" id="email" width="100%" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td>Your Message</td>
+                <td>&nbsp;</td>
+                <td><textarea name="message" id="" cols="30" rows="10" placeholder="type your message here"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="right">
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
